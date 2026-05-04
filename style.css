@@ -603,6 +603,80 @@ body::before {
 
 .text-center { text-align: center; }
 
+/* Summer note */
+.summer-note {
+  margin-top: 32px;
+  padding: 22px 24px;
+  background: linear-gradient(135deg, rgba(201,168,124,0.18), rgba(232,216,192,0.45));
+  border: 1.5px dashed var(--latte);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.summer-note::before {
+  content: '☀';
+  position: absolute;
+  top: -10px;
+  right: 16px;
+  font-size: 60px;
+  opacity: 0.07;
+  line-height: 1;
+}
+
+.summer-note-emoji {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.summer-note-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--espresso);
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.summer-note-sub {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+}
+
+/* Page footer */
+.page-footer {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--parchment);
+  text-align: center;
+}
+
+.footer-made {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--muted);
+  opacity: 0.6;
+  letter-spacing: 0.06em;
+}
+
+.footer-made span {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  color: var(--latte);
+  opacity: 1;
+}
+
+.footer-heart {
+  color: var(--latte);
+  font-size: 11px;
+}
+
 /* Scrollbar styling */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--cream); }
